@@ -10,9 +10,9 @@ DATA_DIR.mkdir(exist_ok=True, parents=True)
 path = kagglehub.dataset_download("abdallahalidev/plantvillage-dataset")
 
 color_folder = None
-for path in Path(path).rglob("*"):   # рекурсивный поиск по всем папкам
-    if path.is_dir() and path.name == "color":
-        color_folder = path
+for folder_path in Path(path).rglob("*"):   # рекурсивный поиск по всем папкам
+    if folder_path.is_dir() and folder_path.name == "color":
+        color_folder = folder_path
         break
 
 target_path = DATA_DIR / "plantvillage" / "color"
