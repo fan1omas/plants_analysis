@@ -25,7 +25,3 @@ train_loader = DataLoader(d_train, batch_size=32, shuffle=True, num_workers=4)
 
 d_val = ImageFolder(path / "val", transform=val_transform)
 val_loader = DataLoader(d_val, batch_size=32, shuffle=False, num_workers=4)
-
-print(f"📊 Train: {len(d_train)} фото, {len(train_loader)} батчей")
-print(f"📊 Val:   {len(d_val)} фото, {len(val_loader)} батчей")
-print(f"📋 Классов: {len(d_train.classes)}")
