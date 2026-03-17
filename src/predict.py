@@ -7,8 +7,8 @@ from pathlib import Path
 from model import create_model, get_device
 from data_loader import val_transform as transform
 
-MODEL_PATH = Path("models/old_model.pth")
-IMAGE_PATH = Path("1.jpg") 
+MODEL_PATH = Path("models/model.pth")
+IMAGE_PATH = Path("image.jpg") 
 
 def load_model(model_path, device):
     model = create_model()
