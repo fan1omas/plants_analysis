@@ -1,31 +1,20 @@
 import torch
 import torch.nn.functional as F
 from PIL import Image
+from torchvision.datasets import ImageFolder
 from pathlib import Path
 
 from model import create_model, get_device
 from data_loader import val_transform as transform
 
 MODEL_PATH = Path("models/model.pth")
-IMAGE_PATH = Path("image.jpg") 
+IMAGE_PATH = Path("1.jpg") 
 
 _model = None
 _device = None
 
-CLASS_NAMES = [
-    "apple_scab", "apple_black_rot", "apple_healthy",
-    "blueberry_healthy", "cherry_powdery_mildew", "cherry_healthy",
-    "corn_gray_leaf_spot", "corn_common_rust", "corn_northern_leaf_blight", "corn_healthy",
-    "grape_black_rot", "grape_esca", "grape_leaf_blight", "grape_healthy",
-    "orange_haunglongbing", "peach_bacterial_spot", "peach_healthy",
-    "pepper_bacterial_spot", "pepper_healthy",
-    "potato_early_blight", "potato_late_blight", "potato_healthy",
-    "raspberry_healthy", "soybean_healthy", "squash_powdery_mildew",
-    "strawberry_leaf_scorch", "strawberry_healthy",
-    "tomato_bacterial_spot", "tomato_early_blight", "tomato_late_blight",
-    "tomato_leaf_mold", "tomato_septoria_leaf_spot", "tomato_spider_mites",
-    "tomato_target_spot", "tomato_yellow_leaf_curl", "tomato_mosaic_virus", "tomato_healthy"
-]
+train_data = ImageFolder('../data/processed/train')
+CLASS_NAMES = train_data.classes
 
 def load_model(model_path, device):
     global _model, _device
@@ -61,5 +50,5 @@ if __name__ == "__main__":
     
     class_idx, confidence = predict_image(model, IMAGE_PATH, device, transform)
     
-    print(f"класс: {class_idx}")
+    print(f"класс: {class_idx}, {CLASS_NAMES[class_idx]}")
     print(f"уверенность: {confidence*100:.2f}%")
