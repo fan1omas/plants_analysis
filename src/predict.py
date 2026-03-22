@@ -16,6 +16,16 @@ _device = None
 train_data = ImageFolder('../data/processed/train')
 CLASS_NAMES = train_data.classes
 
+import json
+
+TRANSLATIONS = '../translations.json'
+with open(TRANSLATIONS, "r", encoding="utf-8") as f:
+    CLASS_NAMES_RU = json.load(f)
+
+def get_disease_name_ru(name):
+    global CLASS_NAMES_RU 
+    return CLASS_NAMES_RU[name]
+
 def load_model(model_path, device):
     global _model, _device
     if _model is None:
