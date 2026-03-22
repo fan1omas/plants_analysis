@@ -7,7 +7,8 @@ from pathlib import Path
 from model import create_model, get_device
 from data_loader import val_transform as transform
 
-MODEL_PATH = Path("models/model.pth")
+BASE_DIR = Path(__file__).parent.parent
+MODEL_PATH = BASE_DIR / 'models' / 'model.pth'
 IMAGE_PATH = Path("1.jpg") 
 
 _model = None
@@ -18,7 +19,7 @@ CLASS_NAMES = train_data.classes
 
 import json
 
-TRANSLATIONS = '../translations.json'
+TRANSLATIONS = BASE_DIR / 'translations.json'
 with open(TRANSLATIONS, "r", encoding="utf-8") as f:
     CLASS_NAMES_RU = json.load(f)
 
