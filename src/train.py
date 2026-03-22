@@ -8,7 +8,7 @@ from data_loader import train_loader, val_loader
 
 NUM_EPOCHS = 10
 LEARNING_RATE = 0.001
-SAVE_PATH = Path("models")
+SAVE_PATH = Path("../models")
 
 def train(model, loader, criterion, optimizer, device):
     model.train()
