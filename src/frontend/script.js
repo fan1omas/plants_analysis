@@ -61,6 +61,7 @@ analyzeBtn.addEventListener('click', async () => {
         
         if (!response.ok) {
             const err = await response.json();
+            console.log(err.detail);
             throw new Error(err.detail || 'Ошибка при анализе');
         }   
         
