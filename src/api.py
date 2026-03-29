@@ -8,6 +8,16 @@ from io import BytesIO
 
 app = FastAPI()
 
+from fastapi.middleware.cors import CORSMiddleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
 _model = None
 _device = None
 
@@ -35,4 +45,3 @@ async def predict(file_bytes: bytes = File()):
 
 if __name__ == '__main__':
     uvicorn.run('api:app', reload=True)
-
