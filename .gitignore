@@ -1,6 +1,6 @@
 venv/ 
 data/ 
-src/models/
+models/
 src/__pycache__/
 .env
 plants analysis.pptx
