@@ -106,7 +106,10 @@ python src/app.py
 python src/api.py          (localhost:8000)
 python -m http.server 3000 (localhost:3000)
 ```
-
+```
+curl -X POST http://localhost:8000/predict \
+  -F "file=@leaf.jpg"
+```
 
 Получите токен бота у @BotFather в Telegram и добавьте в `.env`.
 
