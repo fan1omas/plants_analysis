@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Disease Classifier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Plants analysis</h1>
+        <p>Загрузи фото листа для анализа</p>
+        
+        <!-- Загрузка файла -->
+        <div class="upload-area" id="uploadArea">
+            <input type="file" id="fileInput" accept="image/*">
+            <label for="fileInput" class="upload-label">
+                Выбрать фото
+            </label>
+        </div>
+        
+
+        <div id="preview" class="preview hidden">
+            <img id="previewImage" src="" alt="Preview">
+        </div>
+        
+
+        <button id="analyzeBtn" class="btn hidden" disabled>
+            Проанализировать
+        </button>
+        
+        <!-- Результат -->
+        <div id="result" class="result hidden">
+            <h3>Результат</h3>
+            <p><strong>Болезнь:</strong> <span id="diseaseRu"></span></p>
+            <p><strong>Класс:</strong> <span id="diseaseEn"></span></p>
+            <p><strong>Уверенность:</strong> <span id="confidence"></span></p>
+        </div>
+        
+        <!-- Ошибка -->
+        <div id="error" class="error hidden"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
