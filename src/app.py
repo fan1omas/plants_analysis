@@ -33,11 +33,11 @@ async def handle_photo(message: types.Message):
 
     try:
         image_bytes = await bot.download(image)
-        image = Image.open(image_bytes).convert("RGB")
+        image =  Image.open(image_bytes).convert("RGB")
         
         class_idx, confidence = predict_image(_model, image, device, transform)
         disease = CLASS_NAMES[class_idx]
-        disease_ru = get_disease_name_ru[disease]
+        disease_ru = get_disease_name_ru(disease)
         response = (
             f"Результат:\n\nБолезнь: {disease_ru}\nУверенность модели: {confidence*100:.1f}"
         )
