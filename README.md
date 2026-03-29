@@ -40,7 +40,7 @@ plant-doctor/
 │   ├── check_classes.py    # Проверка классов (была необходима на моменте ошибки с их добавлением)
 │   └── app.py              # Telegram-бот
 ├── models/
-│       └── model.pth       # Обученная модель
+│   └── model.pth       # Обученная модель
 ├── data/
 │   ├── raw/                # Исходные данные
 │   └── processed/          # Обработанные данные (train/val)
