@@ -1,39 +1,360 @@
 {
-    "Blueberry___healthy": 1,
-    "Orange___Haunglongbing_(Citrus_greening)": 4,
-    "Corn_(maize)___healthy": 9,
-    "Strawberry___Leaf_scorch": 22,
-    "Grape___Black_rot": 27,
-    "Squash___Powdery_mildew": 27,
-    "Tomato___Tomato_Yellow_Leaf_Curl_Virus": 31,
-    "Soybean___healthy": 43,
-    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": 46,
-    "Tomato___Spider_mites Two-spotted_spider_mite": 58,
-    "Corn_(maize)___Common_rust_": 60,
-    "Apple___Black_rot": 66,
-    "Potato___Early_blight": 67,
-    "Cherry_(including_sour)___healthy": 69,
-    "Corn_(maize)___Northern_Leaf_Blight": 76,
-    "Peach___healthy": 79,
-    "Cherry_(including_sour)___Powdery_mildew": 82,
-    "Peach___Bacterial_spot": 87,
-    "Pepper,_bell___healthy": 92,
-    "Tomato___Leaf_Mold": 114,
-    "Tomato___Bacterial_spot": 129,
-    "Potato___Late_blight": 138,
-    "Grape___Esca_(Black_Measles)": 141,
-    "Pepper,_bell___Bacterial_spot": 159,
-    "Tomato___healthy": 166,
-    "Apple___healthy": 182,
-    "Raspberry___healthy": 199,
-    "Apple___Apple_scab": 210,
-    "Grape___healthy": 217,
-    "Tomato___Late_blight": 245,
-    "Potato___healthy": 258,
-    "Tomato___Target_Spot": 302,
-    "Tomato___Septoria_leaf_spot": 338,
-    "Apple___Cedar_apple_rust": 347,
-    "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": 415,
-    "Tomato___Tomato_mosaic_virus": 444,
-    "Tomato___Early_blight": 561
+    "Blueberry___healthy": {
+        "Orange___Haunglongbing_(Citrus_greening)": 1
+    },
+    "Orange___Haunglongbing_(Citrus_greening)": {
+        "Tomato___Tomato_Yellow_Leaf_Curl_Virus": 2,
+        "Blueberry___healthy": 3,
+        "Pepper,_bell___healthy": 1,
+        "Potato___Late_blight": 1
+    },
+    "Corn_(maize)___healthy": {
+        "Tomato___Tomato_Yellow_Leaf_Curl_Virus": 5,
+        "Peach___Bacterial_spot": 4
+    },
+    "Grape___Black_rot": {
+        "Grape___Esca_(Black_Measles)": 26
+    },
+    "Squash___Powdery_mildew": {
+        "Tomato___Late_blight": 6,
+        "Strawberry___healthy": 4,
+        "Tomato___healthy": 4,
+        "Apple___Apple_scab": 3,
+        "Grape___Black_rot": 3,
+        "Tomato___Leaf_Mold": 8,
+        "Tomato___Target_Spot": 2,
+        "Peach___Bacterial_spot": 1,
+        "Tomato___Septoria_leaf_spot": 1
+    },
+    "Soybean___healthy": {
+        "Blueberry___healthy": 15,
+        "Cherry_(including_sour)___healthy": 1,
+        "Pepper,_bell___healthy": 18,
+        "Orange___Haunglongbing_(Citrus_greening)": 3,
+        "Tomato___Spider_mites Two-spotted_spider_mite": 1,
+        "Tomato___healthy": 1,
+        "Tomato___Bacterial_spot": 1
+    },
+    "Strawberry___Leaf_scorch": {
+        "Grape___Esca_(Black_Measles)": 11,
+        "Tomato___Tomato_Yellow_Leaf_Curl_Virus": 5,
+        "Grape___Black_rot": 7,
+        "Tomato___Bacterial_spot": 7,
+        "Tomato___Early_blight": 3,
+        "Tomato___Late_blight": 7
+    },
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+        "Tomato___Bacterial_spot": 5,
+        "Tomato___Leaf_Mold": 5,
+        "Tomato___Spider_mites Two-spotted_spider_mite": 14,
+        "Tomato___Septoria_leaf_spot": 4,
+        "Orange___Haunglongbing_(Citrus_greening)": 3,
+        "Pepper,_bell___Bacterial_spot": 5,
+        "Potato___Early_blight": 2,
+        "Tomato___Late_blight": 4,
+        "Tomato___Early_blight": 2
+    },
+    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+        "Potato___Late_blight": 4,
+        "Grape___Black_rot": 24,
+        "Tomato___Spider_mites Two-spotted_spider_mite": 7,
+        "Tomato___Bacterial_spot": 10,
+        "Tomato___Early_blight": 5,
+        "Strawberry___Leaf_scorch": 2
+    },
+    "Peach___Bacterial_spot": {
+        "Tomato___Leaf_Mold": 14,
+        "Tomato___Bacterial_spot": 5,
+        "Peach___healthy": 8,
+        "Blueberry___healthy": 1,
+        "Grape___Black_rot": 4,
+        "Pepper,_bell___Bacterial_spot": 15,
+        "Tomato___Late_blight": 3,
+        "Tomato___Septoria_leaf_spot": 1,
+        "Orange___Haunglongbing_(Citrus_greening)": 2,
+        "Apple___Apple_scab": 3
+    },
+    "Potato___Early_blight": {
+        "Tomato___Septoria_leaf_spot": 7,
+        "Potato___Late_blight": 35,
+        "Pepper,_bell___Bacterial_spot": 8,
+        "Soybean___healthy": 2,
+        "Tomato___Bacterial_spot": 5,
+        "Blueberry___healthy": 1
+    },
+    "Tomato___Spider_mites Two-spotted_spider_mite": {
+        "Tomato___Target_Spot": 29,
+        "Tomato___Leaf_Mold": 9,
+        "Soybean___healthy": 11,
+        "Cherry_(including_sour)___Powdery_mildew": 2,
+        "Tomato___Tomato_Yellow_Leaf_Curl_Virus": 6,
+        "Tomato___Tomato_mosaic_virus": 3
+    },
+    "Corn_(maize)___Northern_Leaf_Blight": {
+        "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": 62,
+        "Tomato___Late_blight": 3
+    },
+    "Cherry_(including_sour)___healthy": {
+        "Tomato___Septoria_leaf_spot": 8,
+        "Orange___Haunglongbing_(Citrus_greening)": 16,
+        "Soybean___healthy": 7,
+        "Blueberry___healthy": 18,
+        "Pepper,_bell___healthy": 7,
+        "Tomato___Tomato_Yellow_Leaf_Curl_Virus": 5,
+        "Strawberry___healthy": 5
+    },
+    "Corn_(maize)___Common_rust_": {
+        "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": 10,
+        "Corn_(maize)___Northern_Leaf_Blight": 53,
+        "Corn_(maize)___healthy": 6
+    },
+    "Apple___Black_rot": {
+        "Potato___Late_blight": 13,
+        "Grape___Black_rot": 12,
+        "Pepper,_bell___healthy": 6,
+        "Peach___Bacterial_spot": 15,
+        "Cherry_(including_sour)___healthy": 6,
+        "Orange___Haunglongbing_(Citrus_greening)": 7,
+        "Soybean___healthy": 11
+    },
+    "Peach___healthy": {
+        "Apple___healthy": 25,
+        "Blueberry___healthy": 10,
+        "Orange___Haunglongbing_(Citrus_greening)": 12,
+        "Pepper,_bell___healthy": 17,
+        "Peach___Bacterial_spot": 17
+    },
+    "Pepper,_bell___healthy": {
+        "Blueberry___healthy": 21,
+        "Cherry_(including_sour)___healthy": 7,
+        "Orange___Haunglongbing_(Citrus_greening)": 38,
+        "Pepper,_bell___Bacterial_spot": 13,
+        "Tomato___healthy": 2
+    },
+    "Cherry_(including_sour)___Powdery_mildew": {
+        "Apple___healthy": 18,
+        "Orange___Haunglongbing_(Citrus_greening)": 17,
+        "Tomato___Early_blight": 12,
+        "Soybean___healthy": 7,
+        "Blueberry___healthy": 8,
+        "Peach___Bacterial_spot": 10,
+        "Pepper,_bell___healthy": 11,
+        "Peach___healthy": 4,
+        "Tomato___Leaf_Mold": 5,
+        "Tomato___Septoria_leaf_spot": 3,
+        "Tomato___Tomato_Yellow_Leaf_Curl_Virus": 3
+    },
+    "Potato___Late_blight": {
+        "Potato___Early_blight": 25,
+        "Tomato___Early_blight": 17,
+        "Tomato___Late_blight": 27,
+        "Pepper,_bell___Bacterial_spot": 6,
+        "Soybean___healthy": 8,
+        "Tomato___Spider_mites Two-spotted_spider_mite": 15,
+        "Tomato___Tomato_Yellow_Leaf_Curl_Virus": 4,
+        "Tomato___Bacterial_spot": 5,
+        "Blueberry___healthy": 5,
+        "Potato___healthy": 2
+    },
+    "Tomato___Bacterial_spot": {
+        "Tomato___Target_Spot": 5,
+        "Tomato___Septoria_leaf_spot": 25,
+        "Peach___Bacterial_spot": 6,
+        "Tomato___Tomato_Yellow_Leaf_Curl_Virus": 30,
+        "Tomato___Late_blight": 18,
+        "Tomato___Leaf_Mold": 8,
+        "Strawberry___Leaf_scorch": 1,
+        "Pepper,_bell___healthy": 4,
+        "Tomato___Spider_mites Two-spotted_spider_mite": 5,
+        "Grape___Black_rot": 7,
+        "Pepper,_bell___Bacterial_spot": 5,
+        "Tomato___Tomato_mosaic_virus": 1,
+        "Corn_(maize)___Northern_Leaf_Blight": 1,
+        "Tomato___Early_blight": 3
+    },
+    "Tomato___Leaf_Mold": {
+        "Tomato___Early_blight": 16,
+        "Tomato___Tomato_mosaic_virus": 14,
+        "Tomato___Target_Spot": 2,
+        "Tomato___Septoria_leaf_spot": 3,
+        "Tomato___Bacterial_spot": 6,
+        "Tomato___Spider_mites Two-spotted_spider_mite": 57,
+        "Tomato___Tomato_Yellow_Leaf_Curl_Virus": 11,
+        "Tomato___Late_blight": 6,
+        "Pepper,_bell___healthy": 7
+    },
+    "Pepper,_bell___Bacterial_spot": {
+        "Tomato___Spider_mites Two-spotted_spider_mite": 8,
+        "Tomato___Tomato_Yellow_Leaf_Curl_Virus": 19,
+        "Pepper,_bell___healthy": 50,
+        "Tomato___Septoria_leaf_spot": 6,
+        "Strawberry___healthy": 6,
+        "Blueberry___healthy": 3,
+        "Orange___Haunglongbing_(Citrus_greening)": 29,
+        "Tomato___Late_blight": 9,
+        "Tomato___Target_Spot": 9,
+        "Corn_(maize)___Northern_Leaf_Blight": 5,
+        "Potato___Late_blight": 8
+    },
+    "Grape___Esca_(Black_Measles)": {
+        "Grape___Black_rot": 152,
+        "Tomato___Early_blight": 2
+    },
+    "Tomato___healthy": {
+        "Tomato___Spider_mites Two-spotted_spider_mite": 103,
+        "Tomato___Target_Spot": 42,
+        "Soybean___healthy": 4,
+        "Cherry_(including_sour)___healthy": 3,
+        "Potato___healthy": 4,
+        "Tomato___Leaf_Mold": 7,
+        "Tomato___Tomato_mosaic_virus": 7,
+        "Pepper,_bell___healthy": 5,
+        "Tomato___Late_blight": 3
+    },
+    "Apple___healthy": {
+        "Soybean___healthy": 45,
+        "Blueberry___healthy": 63,
+        "Tomato___healthy": 9,
+        "Cherry_(including_sour)___healthy": 19,
+        "Tomato___Late_blight": 1,
+        "Apple___Apple_scab": 21,
+        "Tomato___Spider_mites Two-spotted_spider_mite": 19,
+        "Tomato___Target_Spot": 4,
+        "Tomato___Tomato_Yellow_Leaf_Curl_Virus": 3,
+        "Peach___healthy": 5,
+        "Orange___Haunglongbing_(Citrus_greening)": 7,
+        "Peach___Bacterial_spot": 2,
+        "Cherry_(including_sour)___Powdery_mildew": 4,
+        "Grape___Black_rot": 1
+    },
+    "Apple___Apple_scab": {
+        "Apple___Black_rot": 17,
+        "Pepper,_bell___Bacterial_spot": 13,
+        "Tomato___Late_blight": 7,
+        "Strawberry___Leaf_scorch": 8,
+        "Peach___Bacterial_spot": 39,
+        "Blueberry___healthy": 35,
+        "Grape___Black_rot": 27,
+        "Tomato___Leaf_Mold": 6,
+        "Apple___healthy": 30,
+        "Pepper,_bell___healthy": 11,
+        "Tomato___Bacterial_spot": 5,
+        "Orange___Haunglongbing_(Citrus_greening)": 10,
+        "Tomato___Target_Spot": 9,
+        "Cherry_(including_sour)___healthy": 2,
+        "Tomato___Septoria_leaf_spot": 3
+    },
+    "Raspberry___healthy": {
+        "Cherry_(including_sour)___healthy": 41,
+        "Tomato___Late_blight": 21,
+        "Strawberry___healthy": 143,
+        "Cherry_(including_sour)___Powdery_mildew": 13,
+        "Peach___Bacterial_spot": 7
+    },
+    "Grape___healthy": {
+        "Strawberry___healthy": 55,
+        "Grape___Black_rot": 64,
+        "Pepper,_bell___healthy": 11,
+        "Blueberry___healthy": 35,
+        "Soybean___healthy": 33,
+        "Apple___Apple_scab": 15,
+        "Tomato___healthy": 13,
+        "Tomato___Late_blight": 11
+    },
+    "Tomato___Target_Spot": {
+        "Tomato___healthy": 28,
+        "Pepper,_bell___Bacterial_spot": 25,
+        "Tomato___Spider_mites Two-spotted_spider_mite": 128,
+        "Soybean___healthy": 10,
+        "Tomato___Septoria_leaf_spot": 17,
+        "Blueberry___healthy": 3,
+        "Tomato___Leaf_Mold": 5,
+        "Tomato___Bacterial_spot": 15,
+        "Tomato___Tomato_mosaic_virus": 4,
+        "Potato___Early_blight": 4,
+        "Tomato___Late_blight": 7,
+        "Tomato___Early_blight": 2
+    },
+    "Tomato___Late_blight": {
+        "Tomato___Early_blight": 42,
+        "Potato___Late_blight": 33,
+        "Orange___Haunglongbing_(Citrus_greening)": 19,
+        "Tomato___Tomato_Yellow_Leaf_Curl_Virus": 32,
+        "Tomato___Target_Spot": 6,
+        "Tomato___Leaf_Mold": 51,
+        "Corn_(maize)___Common_rust_": 9,
+        "Tomato___Spider_mites Two-spotted_spider_mite": 18,
+        "Tomato___Tomato_mosaic_virus": 11,
+        "Cherry_(including_sour)___healthy": 3,
+        "Strawberry___healthy": 6,
+        "Tomato___Bacterial_spot": 7,
+        "Tomato___Septoria_leaf_spot": 3,
+        "Grape___Black_rot": 2,
+        "Tomato___healthy": 6
+    },
+    "Potato___healthy": {
+        "Blueberry___healthy": 69,
+        "Tomato___Spider_mites Two-spotted_spider_mite": 32,
+        "Soybean___healthy": 128,
+        "Potato___Late_blight": 29
+    },
+    "Apple___Cedar_apple_rust": {
+        "Tomato___Bacterial_spot": 122,
+        "Apple___Apple_scab": 44,
+        "Potato___Late_blight": 21,
+        "Cherry_(including_sour)___Powdery_mildew": 31,
+        "Apple___Black_rot": 19,
+        "Grape___Black_rot": 19,
+        "Peach___Bacterial_spot": 35,
+        "Potato___Early_blight": 17,
+        "Strawberry___Leaf_scorch": 16,
+        "Orange___Haunglongbing_(Citrus_greening)": 19
+    },
+    "Tomato___Septoria_leaf_spot": {
+        "Strawberry___Leaf_scorch": 11,
+        "Tomato___Bacterial_spot": 37,
+        "Tomato___Early_blight": 17,
+        "Tomato___Leaf_Mold": 122,
+        "Peach___Bacterial_spot": 48,
+        "Tomato___Late_blight": 18,
+        "Pepper,_bell___Bacterial_spot": 6,
+        "Tomato___Tomato_Yellow_Leaf_Curl_Virus": 20,
+        "Tomato___Target_Spot": 24,
+        "Tomato___healthy": 5,
+        "Tomato___Spider_mites Two-spotted_spider_mite": 10,
+        "Grape___Black_rot": 5,
+        "Grape___Esca_(Black_Measles)": 6,
+        "Apple___Black_rot": 11,
+        "Apple___Cedar_apple_rust": 3,
+        "Tomato___Tomato_mosaic_virus": 1
+    },
+    "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+        "Corn_(maize)___Northern_Leaf_Blight": 412,
+        "Strawberry___Leaf_scorch": 12,
+        "Corn_(maize)___healthy": 20
+    },
+    "Tomato___Tomato_mosaic_virus": {
+        "Tomato___Spider_mites Two-spotted_spider_mite": 96,
+        "Tomato___Leaf_Mold": 259,
+        "Tomato___Late_blight": 26,
+        "Tomato___Septoria_leaf_spot": 70,
+        "Tomato___healthy": 14,
+        "Tomato___Tomato_Yellow_Leaf_Curl_Virus": 18
+    },
+    "Tomato___Early_blight": {
+        "Tomato___Late_blight": 94,
+        "Tomato___Target_Spot": 81,
+        "Tomato___Leaf_Mold": 71,
+        "Tomato___Bacterial_spot": 58,
+        "Tomato___Tomato_Yellow_Leaf_Curl_Virus": 51,
+        "Potato___Late_blight": 9,
+        "Tomato___Spider_mites Two-spotted_spider_mite": 41,
+        "Strawberry___Leaf_scorch": 7,
+        "Tomato___Septoria_leaf_spot": 89,
+        "Potato___Early_blight": 8,
+        "Peach___Bacterial_spot": 14,
+        "Tomato___Tomato_mosaic_virus": 11,
+        "Pepper,_bell___Bacterial_spot": 3,
+        "Apple___Apple_scab": 5
+    }
 }

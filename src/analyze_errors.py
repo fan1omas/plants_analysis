@@ -20,6 +20,13 @@ _model = load_model(MODEL_PATH, _device)
 
 DATA_DIR = BASE_DIR / "data" / "processed" / "val"
 
+def get_dict_sum(items): 
+    s = 0 
+    for i in items[1].values(): 
+        s += i
+
+    return s
+
 for _ in range(NUMBER):
     print(f'\r{_}', end='', flush=True)
     for folder in DATA_DIR.iterdir():
@@ -31,11 +38,15 @@ for _ in range(NUMBER):
 
         if folder.name != disease:
             if folder.name in error_classes:
-                error_classes[folder.name] += 1
+                if disease in error_classes[folder.name]:
+                    error_classes[folder.name][disease] += 1
+                else:
+                    error_classes[folder.name][disease] = 1
             else:
-                error_classes[folder.name] = 1
+                error_classes[folder.name] = {}
+                error_classes[folder.name][disease] = 1
 
-error_classes = dict(sorted(error_classes.items(), key=lambda x: x[1]))
+error_classes = dict(sorted(error_classes.items(), key=lambda x: get_dict_sum(x)))
 
 with open(BASE_DIR / 'error_classes.json', 'w', encoding='utf-8') as f:
     json.dump(error_classes, f, indent=4)
