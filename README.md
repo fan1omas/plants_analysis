@@ -25,6 +25,7 @@ plant-doctor/
 ├── README.md
 ├── requirements.txt
 ├── translations.json       # Небольшой файл для получения перевода болезней на русский
+├── error_classes.json      # Проблемные классы  
 ├── src/
 │   ├── frontend/
 │   │   ├── index.html
@@ -32,6 +33,7 @@ plant-doctor/
 │   │   └── script.js
 │   ├── download.py         # Загрузка датасета из kaggle
 │   ├── model.py            # Архитектура модели
+│   ├── analyze_errors.py   # Файл для нахождения проблемных классов
 │   ├── train.py            # Обучение модели
 │   ├── predict.py          # Логика предсказания
 │   ├── data_loader.py      # Загрузка и аугментация данных
@@ -51,8 +53,8 @@ plant-doctor/
 
 1. Клонируйте репозиторий:
 ```bash
-git clone https://github.com/fan1omass/plants_analysis
-cd plant-doctor
+git clone https://github.com/fan1omas/plants_analysis
+cd plants_analysis
 ```
 
 2. Установите зависимости:
