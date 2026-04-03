@@ -19,7 +19,7 @@
 ## Структура проекта
 
 ```
-plant-doctor/
+plants_analysis/
 ├── .env                    # Переменные окружения (TOKEN)
 ├── .gitignore
 ├── README.md
