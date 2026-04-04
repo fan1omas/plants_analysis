@@ -56,7 +56,3 @@ diff = end_time - start_time
 print()
 print(f'{diff // 60} минут.')
 
-"""print('=' * 40)
-for i in error_classes:
-    print(f'{i}: {error_classes[i]}')"""
-
